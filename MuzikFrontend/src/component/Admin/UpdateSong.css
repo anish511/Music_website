@@ -1,0 +1,154 @@
+body {
+    margin: 0!important;
+    padding: 0!important;
+}
+
+.dashboard {
+    width: 100vw;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    position: absolute;
+  }
+
+.newSongContainer {
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+    background-color: rgb(221, 221, 221);
+    border-left: 1px solid rgba(0, 0, 0, 0.158);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .newSongContainer h1 {
+    color: rgba(0, 0, 0, 0.733);
+    font: 300 2rem "Roboto";
+    text-align: center;
+  }
+  
+  .createSongForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5% ;
+    padding: 3vmax;
+    justify-content: space-evenly;
+    height: 70%;
+    width: 60vh;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.267);
+  }
+  
+  .createSongForm > div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+  .createSongForm > div > input,
+  .createSongForm > div > select,
+  .createSongForm > div > textarea,
+  .createSongForm > div > .dropdown {
+    padding: 1vmax 4vmax;
+    padding-right: 1vmax;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.267);
+    border-radius: 4px;
+    font: 300 0.9vmax cursive;
+    outline: none;
+    margin-bottom: 2%;
+  }
+  
+  .createSongForm > div > svg {
+    position: absolute;
+    transform: translateX(1vmax);
+    font-size: 1.6vmax;
+    color: rgba(0, 0, 0, 0.623);
+  }
+  
+  #createSongFormFile > input {
+    display: flex;
+    padding: 0%;
+  }
+  
+  #createSongFormFile > input::file-selector-button {
+    cursor: pointer;
+    width: 100%;
+    z-index: 2;
+    height: 5vh;
+    border: none;
+    margin: 0%;
+    font: 400 0.8vmax cursive;
+    transition: all 0.5s;
+    padding: 0 1vmax;
+    color: rgba(0, 0, 0, 0.623);
+    background-color: rgb(255, 255, 255);
+  }
+  
+  #createSongFormFile > input::file-selector-button:hover {
+    background-color: rgb(235, 235, 235);
+  }
+  
+  #createSongFormImage {
+    width: 100%;
+    overflow: auto;
+  }
+  
+  #createSongFormImage > img {
+    width: 3vmax;
+    margin: 0 0.5vmax;
+  }
+  .SongBtn {
+    border: none!important;
+    background-color: tomato!important;
+    color: white!important;
+    font: 300 0.9vmax "Roboto"!important;
+    width: 100%!important;
+    padding: 0.8vmax!important;
+    cursor: pointer!important;
+    transition: all 0.5s!important;
+    border-radius: 4px!important;
+    outline: none!important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.219)!important;
+    margin-bottom: 2%!important;
+  }
+  
+  .SongBtn:hover {
+    background-color: rgb(179, 66, 46)!important;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .newSongContainer {
+      background-color: rgb(255, 255, 255);
+    }
+    .createSongForm {
+      padding: 5vmax;
+    }
+  
+    .createSongForm > div > input,
+    .createSongForm > div > select,
+    .createSongForm > div > textarea {
+      padding: 2.5vmax 5vmax;
+      font: 300 1.7vmax cursive;
+    }
+  
+    .createSongForm > div > svg {
+      font-size: 2.8vmax;
+    }
+  
+    #createSongFormFile > img {
+      width: 8vmax;
+      border-radius: 100%;
+    }
+  
+    #createSongFormFile > input::file-selector-button {
+      height: 7vh;
+      font: 400 1.8vmax cursive;
+    }
+  
+    .SongBtn {
+      font: 300 1.9vmax "Roboto";
+      padding: 1.8vmax;
+    }
+  }

@@ -1,0 +1,126 @@
+.dashboard {
+    width: 100vw;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    position: absolute;
+  }
+
+.homeHeading {
+    text-align: center;
+    font-family: Roboto;
+    font-size: 1.4vmax;
+    border-bottom: 1px solid rgba(21, 21, 21, 0.5);
+    width: 20vmax;
+    padding: 1vmax;
+    margin: 5vmax auto;
+    color: rgb(0, 0, 0, 0.7);
+  }
+  
+  .container2 {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: rgb(221, 221, 221);
+    border-left: 1px solid rgba(0, 0, 0, 0.158);
+  }
+
+  .container1 {
+    display: flex;
+    margin: 2vmax auto;
+    width: 80vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+  }
+  
+  .albumCard {
+    width: 18vmax;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: rgb(243, 239, 239);
+    background-color: rgb(71, 70, 70);
+    margin: 2vmax;
+    transition: all 0.5s;
+    padding-bottom: 0.5vmax;
+    border-radius: 3%;
+  }
+  
+  .albumCard > img {
+    width: 18vmax;
+    height: 18vmax;
+    border-radius: 3%;
+  }
+  
+  /* .albumCard > div {
+    margin: 0.5vmax;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  } */
+  
+  .albumCardSpan {
+    margin: 0.5vmax;
+    font: 300 0.7vmax "Roboto";
+  }
+  
+  .albumCard > p {
+    font-family: "Roboto";
+    font-size: 1.7vmax;
+    margin: 1vmax 0.5vmax;
+    margin-bottom: 0;
+  }
+  
+  .albumCard > span {
+    margin: 0.5vmax;
+    color: tomato;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 1vmax;
+  }
+
+  .albumCard > .play {
+    display: hide;
+  }
+  
+  .albumCard:hover {
+    
+  }
+
+  .button {
+    display: flex;
+    justify-content: space-between!important;
+    width: 100%!important;
+    margin: 0%!important;
+    color:rgb(221, 221, 221)!important;
+    /* padding-left: 2%!important;
+    padding-right: 2%!important; */
+  }
+
+  .button > .updateBtn{
+    background-color: blue!important;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .albumCard > p {
+      font-size: 1.7vmax;
+    }
+  
+    .albumCard > div {
+      margin: 0vmax;
+      display: block;
+    }
+  
+    .albumCard > span {
+      font-size: 1.5vmax;
+    }
+  
+    .albumCard > div > span {
+      margin: 0 0.5vmax;
+      font: 300 1vmax "Roboto";
+    }
+  }

@@ -1,0 +1,153 @@
+body {
+    margin: 0!important;
+    padding: 0!important;
+}
+
+/* .dashboard {
+    width: 100vw;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    position: absolute;
+  } */
+
+.newPlaylistContainer {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(221, 221, 221);
+    border-left: 1px solid rgba(0, 0, 0, 0.158);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .newPlaylistContainer h1 {
+    color: rgba(0, 0, 0, 0.733);
+    font: 300 2rem "Roboto";
+    text-align: center;
+  }
+  
+  .createPlaylistForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 3vmax;
+    justify-content: space-evenly;
+    height: 70%;
+    width: 40vh;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.267);
+  }
+  
+  .createPlaylistForm > div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+  .createPlaylistForm > div > input,
+  .createPlaylistForm > div > select,
+  .createPlaylistForm > div > textarea,
+  .createPlaylistForm > div > .dropdown {
+    padding: 1vmax 4vmax;
+    padding-right: 1vmax;
+    width: 100%;
+    margin-bottom: 2%;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.267);
+    border-radius: 4px;
+    font: 300 0.9vmax cursive;
+    outline: none;
+  }
+  
+  .createPlaylistForm > div > svg {
+    position: absolute;
+    transform: translateX(1vmax);
+    font-size: 1.6vmax;
+    color: rgba(0, 0, 0, 0.623);
+  }
+  
+  #createPlaylistFormFile > input {
+    display: flex;
+    padding: 0%;
+  }
+  
+  #createPlaylistFormFile > input::file-selector-button {
+    cursor: pointer;
+    width: 100%;
+    z-index: 2;
+    height: 5vh;
+    border: none;
+    margin: 0%;
+    font: 400 0.8vmax cursive;
+    transition: all 0.5s;
+    padding: 0 1vmax;
+    color: rgba(0, 0, 0, 0.623);
+    background-color: rgb(255, 255, 255);
+  }
+  
+  #createPlaylistFormFile > input::file-selector-button:hover {
+    background-color: rgb(235, 235, 235);
+  }
+  
+  #createPlaylistFormImage {
+    width: 100%;
+    overflow: auto;
+  }
+  
+  #createPlaylistFormImage > img {
+    width: 3vmax;
+    margin: 0 0.5vmax;
+  }
+  #createPlaylistBtn {
+    border: none;
+    background-color: tomato;
+    color: white;
+    font: 300 0.9vmax "Roboto";
+    width: 100%;
+    padding: 0.8vmax;
+    cursor: pointer;
+    transition: all 0.5s;
+    border-radius: 4px;
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.219);
+  }
+  
+  #createPlaylistBtn:hover {
+    background-color: rgb(179, 66, 46);
+  }
+  
+  @media screen and (max-width: 600px) {
+    .newPlaylistContainer {
+      background-color: rgb(255, 255, 255);
+    }
+    .createPlaylistForm {
+      padding: 5vmax;
+    }
+  
+    .createPlaylistForm > div > input,
+    .createPlaylistForm > div > select,
+    .createPlaylistForm > div > textarea {
+      padding: 2.5vmax 5vmax;
+      font: 300 1.7vmax cursive;
+    }
+  
+    .createPlaylistForm > div > svg {
+      font-size: 2.8vmax;
+    }
+  
+    #createPlaylistFormFile > img {
+      width: 8vmax;
+      border-radius: 100%;
+    }
+  
+    #createPlaylistFormFile > input::file-selector-button {
+      height: 7vh;
+      font: 400 1.8vmax cursive;
+    }
+  
+    #createPlaylistBtn {
+      font: 300 1.9vmax "Roboto";
+      padding: 1.8vmax;
+    }
+  }

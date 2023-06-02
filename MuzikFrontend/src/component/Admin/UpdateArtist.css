@@ -1,0 +1,112 @@
+.dashboard {
+    width: 100vw;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    position: absolute;
+  }
+
+.homeHeading {
+    text-align: center;
+    font-family: Roboto;
+    font-size: 1.4vmax;
+    border-bottom: 1px solid rgba(21, 21, 21, 0.5);
+    width: 20vmax;
+    padding: 1vmax;
+    margin: 5vmax auto;
+    color: rgb(0, 0, 0, 0.7);
+  }
+  
+  .container4 {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: rgb(221, 221, 221);
+    border-left: 1px solid rgba(0, 0, 0, 0.158);
+  }
+
+  .container3 {
+    display: flex;
+    margin: 2vmax auto;
+    width: 80vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+  }
+  
+  .artistCard {
+    width: 18vmax;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: rgb(240, 237, 237);
+    background-color: rgb(63, 63, 63);
+    margin: 2vmax;
+    transition: all 0.5s;
+    padding-bottom: 0.5vmax;
+    border-radius: 3%;
+  }
+  
+  .artistCard > img {
+    width: 18vmax;
+    height: 18vmax;
+    border-radius: 3%;
+  }
+  
+  .artistCard > div {
+    margin: 0.5vmax;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .artistCardSpan {
+    margin: 0.5vmax;
+    font: 300 0.7vmax "Roboto";
+  }
+  
+  .artistCard > p {
+    font-family: "Roboto";
+    font-size: 1.7vmax;
+    margin: 1vmax 0.5vmax;
+    margin-bottom: 0;
+  }
+  
+  .artistCard > span {
+    margin: 0.5vmax;
+    color: tomato;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 1vmax;
+  }
+
+  .artistCard > .play {
+    display: hide;
+  }
+  
+  .artistCard:hover {
+    
+  }
+  
+  @media screen and (max-width: 600px) {
+    .artistCard > p {
+      font-size: 1.7vmax;
+    }
+  
+    .artistCard > div {
+      margin: 0vmax;
+      display: block;
+    }
+  
+    .artistCard > span {
+      font-size: 1.5vmax;
+    }
+  
+    .artistCard > div > span {
+      margin: 0 0.5vmax;
+      font: 300 1vmax "Roboto";
+    }
+  }
